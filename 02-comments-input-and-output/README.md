@@ -55,13 +55,40 @@ to `std::cout`. As with `std::cout`, in order to use `std::cin`, one must `#incl
 
 ```cpp
 #include <iostream>
+#include <string>
 
 int main()
 {
 	int age;
+        std::string name;
+
 	std::cout << "How old are you?" << std::endl;
 	std::cin >> age;
 	std::cout << "I see! So you are " << age << " years old!" << std::endl;
+
+        std::cout << "What is your name?" << std::endl;
+        std::cin >> name;
+        std::cout << "I see! So your name is " << name << std::endl;
 	return 0;
 }
 ```
+
+In contrast to `std::cout`, `std::cin` also flips the direction of the arrows.
+
+`std::cin` will stop reading upon hitting a whitespace character (such as a space or tab) meaning that if you were
+to input a name that contains a space only the first part of the name will be read. Of course, there exists additional
+tools to read an entire line of input.
+
+```cpp
+#include <iostream>
+#include <string>
+
+int main()
+{
+        std::string input;
+        // Read an entire line from std::cin to input
+        std::getline(std::cin, input);
+        std::cout << input << std::endl;
+}
+```
+
