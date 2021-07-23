@@ -92,3 +92,20 @@ int main()
 }
 ```
 
+### Output
+
+Output to the console in C++ is usually done in one of two ways. The first method is, of course, using `std::cout`.
+This is intended to be used for genuine program output, akin to the previous examples. The second method consists
+of using `std::cerr`, which is reserved for logging errors that may or may not occur when running the program.
+Besides its designated use case, using `std::cerr` is as simple as using `std::cout`.
+
+```cpp
+#include <iostream> 
+// std::cerr comes from iostream, just like std::cout and std::cin
+
+int main()
+{
+        std::cout << "Same same" << std::endl;
+        std::cerr << "But different :^)" << std::endl;
+}
+```
