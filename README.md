@@ -1,1 +1,1 @@
-# how-to-cpp
+# cpp-how-to
