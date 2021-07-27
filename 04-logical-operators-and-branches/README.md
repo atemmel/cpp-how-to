@@ -163,3 +163,71 @@ int main()
 	return 0;
 }
 ```
+
+### `&&` (and)
+
+`&&` checks if *both* the expression to the left *and* right are true.
+
+```cpp
+#include <iostream>
+
+int main()
+{
+	if(4 > 3 && 3 > 2)	// if 4 is greater than 3, and 3 is greater than 2
+	{
+		std::cout << "3 is between 4 and 2" << std::endl;
+	}
+	else
+	{
+		std::cout << "3 is not between 4 and 2" << std::endl;
+	}
+
+	if(4 > 1 && 1 > 2) // if 4 is greater than 1, and 1 is greater than 2
+	{
+		std::cout << "1 is between 4 and 2" << std::endl;
+	}
+	else
+	{
+		std::cout << "1 is not between 4 and 2" << std::endl;
+	}
+}
+```
+Output:
+```
+3 is between 4 and 2
+1 is not between 4 and 2
+```
+
+### `||` (or)
+
+`||` checks if *either* the expression to the left *or* right are true.
+
+```cpp
+#include <iostream>
+
+int main()
+{
+	if(4 > 3 || 3 > 2)	// if 4 is greater than 3, or 3 is greater than 2
+	{
+		std::cout << "3 is either less than 4 or greater than 2" << std::endl;
+	}
+	else
+	{
+		std::cout << "3 is not less than 4 and not greater than 2" << std::endl;
+	}
+
+	if(4 > 1 || 1 > 2) // if 4 is greater than 1, or 1 is greater than 2
+	{
+		std::cout << "1 is either less than 4 or greater than 2" << std::endl;
+	}
+	else
+	{
+		std::cout << "1 is not less than 4 and 1 is not greater than 2" << std::endl;
+	}
+}
+```
+Output:
+```
+3 is either less than 4 or greater than 2
+1 is either less than 4 or greater than 2
+```
