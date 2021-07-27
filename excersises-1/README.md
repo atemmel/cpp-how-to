@@ -1,8 +1,8 @@
 ## Excercises 1
 
-### 1: Star Staircase
+### 1.0: Star Staircase
 
-Your task is to create a program that prints a staircase made out of stars (`*`). Each step of the staircase should contain one star less than the step below it. The program should prompt the user for how many steps the staircase should consist of.
+The task is to create a program that prints a staircase made out of stars (`*`). Each step of the staircase should contain one star less than the step below it. The program should prompt the user for how many steps the staircase should consist of.
 
 Example interactions with the program:
 ```
@@ -32,4 +32,41 @@ Please write how many steps you want the staircase to have:
 ******
 *******
 ********
+```
+
+### 1.1: Broken Star Staircase
+
+The task is to extend the previous program into creating a flawed staircase. Besides prompting the user for the amount of steps the staircase should contain, the program should also prompt the user for which step of the staircase that should be broken. In the event that the broken step is out of bounds of the staircase, such as asking for the 8th step of a staircase with only 4 steps available to be broken, should print an error message instead.
+
+Example interactions with the program:
+```
+Please write how many steps you want the staircase to have:
+5
+Please write which step you want to be broken:
+4
+*
+**
+***
+
+*****
+```
+```
+Please write how many steps you want the staircase to have:
+7
+Please write which step you want to be broken:
+1
+
+**
+***
+****
+*****
+******
+*******
+```
+```
+Please write how many steps you want the staircase to have:
+4
+Please write which step you want to be broken:
+5
+A staircase with 4 steps cannot have a broken step at number 5
 ```
