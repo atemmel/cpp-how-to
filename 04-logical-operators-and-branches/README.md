@@ -116,9 +116,9 @@ int main()
 	{
 		std::cout << "3 is greater than 4" << std::endl;
 	}
-	else if(3 == 4) 
+	else if(3 == 4) 	// otherwise, if 3 is equal to 4
 	{
-		std::cout << "
+		std::cout << "3 is equal to 4" << std::endl;
 	}
 	else	// otherwise, print "3 is not greater than 4"
 	{
