@@ -70,3 +70,36 @@ Please write which step you want to be broken:
 5
 A staircase with 4 steps cannot have a broken step at number 5
 ```
+
+### 2.0: Odd or Even
+
+The task is to write a program which, after prompting the user for a number, prints a message describing whether the number was Odd or Even.
+
+Example interactions with the program:
+```
+Please write a number:
+7
+Odd
+```
+```
+Please write a number:
+2
+Even
+```
+```
+Please write a number:
+0
+Even
+```
+
+### 2.1: Odd or Even (with functions)
+
+Building upon the previous task, the program should work exactly as the previous program from the users point of view, but the code, but the internal logic should be modified slightly. You are now meant to write a function that should determine if an `int` is even. The function should look like this:
+
+```cpp
+bool isEven(int value)
+{
+	// Code goes here...
+	...
+}
+```
