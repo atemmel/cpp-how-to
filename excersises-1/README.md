@@ -79,7 +79,7 @@ A staircase with 4 steps cannot have a broken step at number 5
 
 Suggested reading: [`Arithmetic operators`](../03-arithmetic-operators), [`Logical operators and Branches`](../04-logical-operators-and-branches)
 
-The task is to write a program which, after prompting the user for a number, prints a message describing whether the number was Odd or Even.
+The task is to write a program which, after prompting the user for a number, prints a message describing whether the number was `Odd` or `Even`.
 
 Example interactions with the program:
 ```
@@ -102,7 +102,7 @@ Even
 
 Suggested reading: [`Arithmetic operators`](../03-arithmetic-operators), [`Logical operators and Branches`](../04-logical-operators-and-branches), [`Functions`](06-functions)
 
-Building upon the previous task, the program should work exactly as the previous program from the users point of view, but the code, but the internal logic should be modified slightly. You are now meant to write a function that should determine if an `int` is even. The function should look like this:
+Building upon the previous task, the program should work exactly as the previous program from the users point of view, but the code should be modified slightly. You are now meant to write a function that should determine if an `int` is even. The function should look like this:
 
 ```cpp
 bool isEven(int value)
@@ -111,3 +111,5 @@ bool isEven(int value)
 	...
 }
 ```
+
+This function should then be called and used by the program, in order to determine if it should print `Odd` or `Even`
