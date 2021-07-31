@@ -146,3 +146,66 @@ Size is 5
 After clear:
 Size is 0
 ```
+
+### `std::string`
+
+`std::string` very closely resambles a `std::vector<char>` from a developers point of view. A `std::string` can grow and shrink dynamically during the course of the program, much like how `std::vector` operates. In fact, *every* operation this page has mentioned so far regarding `std::vector` is also applicable to `std::string`. You can query the `size` of a ``std::string``, you can index into it using the indexing operator (`[]`) and you can even push or pop individual `char`s to it using `push_back` and `pop_back`. Most of the few differences between a `std::vector` and a `std::string` are a few quality-of-life additions made to `std::string` for certain scenarios. A few of them are as follows:
+
+### `+`, `+=`
+
+```cpp
+// You can use the + and += operators on std::string variables
+// 'Adding' two strings together will concatenate them into one larger string
+std::string letters = "abc";
+letters += "def";
+std::cout << letters << std::endl;
+```
+
+Output:
+```
+abcdef
+```
+
+### `find`
+
+```cpp
+std::string letters = "abcdef";
+
+// find will return the index of the first encountered character in a std::string
+int index = letters.find('d');
+std::cout << "d was encountered at index: " << index << std::endl;
+
+// In the event that character we search for does not appear within the string, -1 is returned instead
+index = letters.find('z');
+std::cout << "z was encountered at index: " << index << std::endl;
+```
+
+Output:
+```
+d was encountered at index: 3
+z was encountered at index: -1
+```
+
+### `substr`
+
+```cpp
+std::string letters = "abcdef";
+
+// substr can be used to create a substring containing parts of another std::string
+// By providing it a single index, substr will create a new std::string containing 
+// everything from that index to the end of the original std::string
+
+std::string part1 = letters.substr(3);
+std::cout << part1 << std::endl;
+
+// You can also give substr another argument, which then specifies how many characters 
+// the substring should consist of
+std::string part2 = letters.substr(0, 3);
+std::cout << part2 << std::endl;
+```
+
+Output:
+```
+def
+abc
+```
