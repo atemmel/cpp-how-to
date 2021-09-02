@@ -62,10 +62,10 @@ std::vector<std::string> explode(std::string base, char delimeter)
 
 Example inputs and outputs for the function:
 ```cpp
-std::vector<std::string> results = explode("Hi Hello Ciao Ola Tjena", ' ');
+std::vector<std::string> results = explode("Hi Hello Ciao Hola Tjena", ' ');
 ```
 ```
-Ouput: results = {"Hi", "Hello", "Ciao", "Ola", "Tjena"}
+Ouput: results = {"Hi", "Hello", "Ciao", "Hola", "Tjena"}
 ```
 ```cpp
 std::vector<std::string> results = explode("a,b,c,d,e,f", ',');
@@ -96,10 +96,10 @@ std::string implode(std::vector<std::string> words, char delimeter)
 
 Example inputs and outputs for the function:
 ```cpp
-std::string result = implode({"Hi", "Hello", "Ciao", "Ola", "Tjena", ' ');
+std::string result = implode({"Hi", "Hello", "Ciao", "Hola", "Tjena", ' ');
 ```
 ```
-Ouput: result = "Hi Hello Ciao Ola Tjena"
+Ouput: result = "Hi Hello Ciao Hola Tjena"
 ```
 ```cpp
 std::string result = implode({"a", "b", "c", "d", "e", "f"}, ',');
