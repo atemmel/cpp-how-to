@@ -166,7 +166,7 @@ Output: result = 1.0
 ```
 ```cpp
 std::vector<double> doubles = {2.0, 0.0, 0.0, 1.0};
-double result = sum(doubles);
+double result = mean(doubles);
 ```
 ```
 Output: result = 0.75
