@@ -1,8 +1,8 @@
 ## Excercises 2
 
-Suggested reading: [`Working with vectors and strings`](07-working-with-vectors-and-strings)
-
 ### 1.0: Palindrome checker
+
+Suggested reading: [`Working with vectors and strings`](07-working-with-vectors-and-strings)
 
 The task is to create a program which can verify wether an inputted string is a palindrome or not. A palindrome is a word that reads the same both backwards and forwards, such as *madam* or *racecar*. The program should prompt the user for a potential palindrome string, and output either `true` or `false` depending on wether the string is a palindrome or not.
 
@@ -112,4 +112,62 @@ std::string result = implode({"a", "b", "c", "d", "e", "f"}, 'z');
 ```
 ```
 Ouput: result = "azbzczdzezf"
+```
+
+### 4.0 Sum
+
+Suggested reading: [`Working with vectors and strings`](07-working-with-vectors-and-strings)
+
+The task is to create a function able to calculate the sum of a `vector`'s elements. The function should look like this:
+
+```cpp
+double sum(std::vector<double> doubles) {
+	// Code goes here...
+	...
+}
+```
+
+Example inputs and outputs for the function:
+```cpp
+std::vector<double> doubles = {1.0, 1.0, 1.0};
+double result = sum(doubles);
+```
+```
+Output: result = 3.0
+```
+```cpp
+std::vector<double> doubles = {2.0, 0.0, 0.0, 1.0};
+double result = sum(doubles);
+```
+```
+Output: result = 3.0
+```
+
+### 4.1 Mean
+
+Suggested reading: [`Working with vectors and strings`](07-working-with-vectors-and-strings)
+
+The task is to create a function able to calculate the mean (average) of a `vector`'s elements. The function should look like this:
+
+```cpp
+double mean(std::vector<double> doubles) {
+	// Code goes here...
+	...
+}
+```
+
+Example inputs and outputs for the function:
+```cpp
+std::vector<double> doubles = {1.0, 1.0, 1.0};
+double result = mean(doubles);
+```
+```
+Output: result = 1.0
+```
+```cpp
+std::vector<double> doubles = {2.0, 0.0, 0.0, 1.0};
+double result = sum(doubles);
+```
+```
+Output: result = 0.75
 ```
