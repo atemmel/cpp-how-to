@@ -171,3 +171,73 @@ double result = mean(doubles);
 ```
 Output: result = 0.75
 ```
+
+### 5.0 isInteger
+
+Suggested reading: [`Working with vectors and strings`](07-working-with-vectors-and-strings)
+
+The task is to create a function able to deduce whether a `std::string` is a valid integer or not. The function should look like this:
+
+```cpp
+bool isInteger(std::string str);
+```
+
+Example inputs and outputs for the function:
+```cpp
+std::cout << isInteger("1234") << std::endl;
+```
+```
+Output:
+1
+```
+
+```cpp
+std::cout << isInteger("abc") << std::endl;
+```
+```
+Output:
+0
+```
+
+```cpp
+std::cout << isInteger("123A") << std::endl;
+```
+```
+Output:
+0
+```
+
+### 6.0 toUpper
+
+Suggested reading: [`Working with vectors and strings`](07-working-with-vectors-and-strings)
+
+The task is to create a function able to convert all lowercase letters in an `std::string` into uppercase letters. The function should look like this:
+
+```cpp
+std::string toUpper(std::string str);
+```
+
+Example inputs and outputs for the function:
+```cpp
+std::cout << toUpper("hello") << std::endl;
+```
+```
+Output:
+HELLO
+```
+
+```cpp
+std::cout << toUpper("Hello") << std::endl;
+```
+```
+Output:
+HELLO
+```
+
+```cpp
+std::cout << toUpper("1by1") << std::endl;
+```
+```
+Output:
+1BY1
+```
