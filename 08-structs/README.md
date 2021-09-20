@@ -40,3 +40,42 @@ Person person;
 person.firstName = "Victor";
 persons.push_back(person);
 ```
+
+## Member functions
+
+`struct`s can also be supplied with member functions. This is an alternative way to write functions that perform different operations with the given `struct`. An example of how to write such a function is as follows:
+
+```cpp
+#include <iostream>
+
+struct Person
+{
+	int age;
+
+	// Forward declaring the function
+	bool isAdult();
+};
+
+// Function definition
+bool Person::isAdult()
+{
+	// Code within the function can reach data owned by the `Person` `struct`
+	return age >= 18;
+}
+
+int main()
+{
+	Person person;
+	person.age = 24;
+
+	// Example of calling the member function
+	if(person.isAdult())
+	{
+		std::cout << "The person is an adult!\n";
+	}
+	else
+	{
+		std::cout << "The person is underage.\n";
+	}
+}
+```
